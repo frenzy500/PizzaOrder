@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:textSize="28sp"
+        android:text="Hullopizza" />
+
+    <Button
+        android:id="@+id/btnOrder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="order" />
+
+    <TextView
+        android:id="@+id/tvSizeLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="בחרו גודל:"
+        android:textSize="18sp" />
+
+    <RadioGroup
+        android:id="@+id/rgSize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/rbSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="small" />
+
+        <RadioButton
+            android:id="@+id/rbMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="medium" />
+
+        <RadioButton
+            android:id="@+id/rbLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="large" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="------------------------------------------------------------------------------------------------" />
+
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/rgCrust"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/rbThin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="thin" />
+
+        <RadioButton
+            android:id="@+id/rbThick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="thick" />
+    </RadioGroup>
+
+</LinearLayout>
